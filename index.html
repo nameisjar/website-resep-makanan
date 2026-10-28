@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="beranda">
         <nav x-data="{ isOpen: false }" class="bg-white shadow dark:bg-gray-900">
             <div class="container px-6 py-4 mx-auto">
                 <div class="lg:flex lg:items-center lg:justify-between">
@@ -40,11 +40,13 @@
                     <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']"
                         class="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white shadow-md lg:bg-transparent lg:dark:bg-transparent lg:shadow-none dark:bg-gray-900 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0">
                         <div class="-mx-4 lg:flex lg:items-center">
-                            <a href="#"
+                            <a href="#beranda"
                                 class="block mx-4 text-gray-700 capitalize dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">Beranda</a>
                             <a href="#"
                                 class="block mx-4 mt-4 text-gray-700 capitalize lg:mt-0 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">Resep
                                 makanan</a>
+                            <a href="#kategori"
+                                class="block mx-4 mt-4 text-gray-700 capitalize lg:mt-0 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400"> Kategori</a>
                             <a href="#"
                                 class="block mx-4 mt-4 text-gray-700 capitalize lg:mt-0 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">Daerah</a>
                             <a href="#"
@@ -198,13 +200,8 @@
         <section class="bg-white dark:bg-gray-900">
             <div class="container px-6 py-10 mx-auto">
                 <div class="text-center">
-                    <h1 class="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">Kategori
+                    <h1 class="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white" id="kategori">Kategori
                         </h1>
-
-                    <!-- <p class="max-w-lg mx-auto mt-4 text-gray-500">
-                        Salami mustard spice tea fridge authentic Chinese food dish salt tasty liquor. Sweet savory
-                        foodtruck
-                        pie. -->
                     </p>
                 </div>
 
@@ -214,30 +211,24 @@
                             <img class="object-cover object-center w-full h-64 rounded-lg lg:h-80"
                                 src="https://images.unsplash.com/photo-1624996379697-f01d168b1a52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
                                 alt="">
-
-                            <!-- <div class="absolute bottom-0 flex p-3 bg-white dark:bg-gray-900 ">
-                                <img class="object-cover object-center w-10 h-10 rounded-full"
-                                     src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" 
-                                    alt="">
-
-                                <div class="mx-4">
-                                    <h1 class="text-sm text-gray-700 dark:text-gray-200">Tom Hank</h1>
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">Creative Director</p>
-                                </div>
-                            </div> -->
                         </div>
 
                         <h1 class="mt-6 text-xl font-semibold text-gray-800 dark:text-white">
                             Resep Ayam Goreng Nasi Kuning
                         </h1>
-<!-- 
-                        <hr class="w-32 my-6 text-blue-500"> -->
 
-                        <!-- <p class="text-sm text-gray-500 dark:text-gray-400">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis fugit dolorum amet
-                            dolores
-                            praesentium, alias nam? Tempore
-                        </p> -->
+                        <a href="#" class="inline-block mt-4 text-blue-500 underline hover:text-blue-400">Cara masak</a>
+                    </div>
+                    <div>
+                        <div class="relative">
+                            <img class="object-cover object-center w-full h-64 rounded-lg lg:h-80"
+                                src="https://images.unsplash.com/photo-1624996379697-f01d168b1a52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                                alt="">
+                        </div>
+
+                        <h1 class="mt-6 text-xl font-semibold text-gray-800 dark:text-white">
+                            Resep Ayam Goreng Nasi Kuning
+                        </h1>
 
                         <a href="#" class="inline-block mt-4 text-blue-500 underline hover:text-blue-400">Cara masak</a>
                     </div>
@@ -248,65 +239,14 @@
                                 src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
                                 alt="">
 
-                            <!-- <div class="absolute bottom-0 flex p-3 bg-white dark:bg-gray-900 ">
-                                <img class="object-cover object-center w-10 h-10 rounded-full"
-                                    src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
-                                    alt="">
-
-                                <div class="mx-4">
-                                    <h1 class="text-sm text-gray-700 dark:text-gray-200">arthur melo</h1>
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">Creative Director</p>
-                                </div>
-                            </div>
-                        </div> -->
-
                         <h1 class="mt-6 text-xl font-semibold text-gray-800 dark:text-white">
                             Resep Ayam Katsu Balado
                         </h1>
 
-                        <!-- <hr class="w-32 my-6 text-blue-500"> -->
-
-                        <!-- <p class="text-sm text-gray-500 dark:text-gray-400">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis fugit dolorum amet
-                            dolores
-                            praesentium, alias nam? Tempore
-                        </p> -->
 
                         <a href="#" class="inline-block mt-4 text-blue-500 underline hover:text-blue-400">Cara masak</a>
                     </div>
 
-                    <div>
-                        <div class="relative">
-                            <img class="object-cover object-center w-full h-64 rounded-lg lg:h-80"
-                                src="https://images.unsplash.com/photo-1597534458220-9fb4969f2df5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
-                                alt="">
-
-                            <!-- <div class="absolute bottom-0 flex p-3 bg-white dark:bg-gray-900 ">
-                                <img class="object-cover object-center w-10 h-10 rounded-full"
-                                    src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
-                                    alt="">
-
-                                <div class="mx-4">
-                                    <h1 class="text-sm text-gray-700 dark:text-gray-200">Amelia. Anderson</h1>
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">Lead Developer</p>
-                                </div>
-                            </div> -->
-                        </div>
-
-                        <h1 class="mt-6 text-xl font-semibold text-gray-800 dark:text-white">
-                            Resep Roti Isi Ayam Cincang
-                        </h1>
-
-                        <!-- <hr class="w-32 my-6 text-blue-500"> -->
-
-                        <!-- <p class="text-sm text-gray-500 dark:text-gray-400">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis fugit dolorum amet
-                            dolores
-                            praesentium, alias nam? Tempore
-                        </p> -->
-
-                        <a href="#" class="inline-block mt-4 text-blue-500 underline hover:text-blue-400">Cara masak</a>
-                    </div>
                 </div>
             </div>
         </section>
